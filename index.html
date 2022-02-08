@@ -17,36 +17,88 @@
   </head>
   <body>
 
-    <!--Webpage Header-->
+    <!-- Webpage Header -->
     <header class="jumbotron jumbotron-fluid d-none d-sm-block">
       <div class="header">
           <div class="logo">
-            <img src="img/logo.png" alt="a cat paw">
+            <a href="#">
+              <img src="img/logo.png" alt="a cat paw">
+            </a>
           </div>
           <div class="title">
             Telsan Cat House
           </div>
           <div class="donate-icon">
-            <i class="fas fa-hand-holding-heart fa-6x"></i>
             <a role="button"
               href="donate/index.html"
-              class="btn btn-light donate-btn">Donate</a>
+              class="btn btn-light btn-lg donate-btn">Donate!</a>
           </div>
         </div>
       </div>
     </header>
 
-    <!--Webpage Body-->
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+      <div class="container-fluid w-100">
+        <!-- Title and Logo only show on xs screens -->
+        <a href="#" class="d-block d-sm-none navbar-title">
+          <img src="img/logo.png" 
+            width="30" 
+            height="30" 
+            class="d-inline-block align-top"
+            alt="a cat paw">
+          <span class="">Telsan Cat House</span>
+        </a>
+
+        <button class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="navbar-collapse collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav nav-fill w-100">
+            <li class="nav-item d-block d-sm-none">
+              <a href="#" class="nav-link">Donate!</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Adopt</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Care</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Volunteer</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Webpage Body -->
     <div>
 
     </div>
 
-    <!--Webpage Footer-->
+    <!-- Webpage Footer -->
     <footer>
 
     </footer>
 
-    <!--jQuery, Popper and Bootstrap JS plugins-->
+    <!-- jQuery, Popper and Bootstrap JS plugins -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
