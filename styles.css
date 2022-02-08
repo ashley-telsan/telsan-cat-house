@@ -84,3 +84,14 @@
 a:hover.nav-link{
   text-decoration: underline;
 }
+
+/* Footer CSS */
+.site-footer{
+  background-color: var(--green-mid);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.site-footer h5{
+  margin-top: 5px;
+  text-decoration: underline;
+}
