@@ -95,3 +95,101 @@ a:hover.nav-link{
   margin-top: 5px;
   text-decoration: underline;
 }
+
+/* Body CSS */
+.body{
+  overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.row-home{
+  overflow: hidden;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  max-height: 400px;
+}
+
+.col-photo{
+  display: flex;
+  overflow: hidden;
+  object-fit: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+.banner{
+  font-size: 1.5rem;
+  padding: 5px;
+  text-align: center;
+  background-color: var(--green-banner);
+}
+
+
+/* Info Cards */
+.info-card{
+  text-align: center;
+  font-size: .95rem;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  padding-top: 10px;
+}
+
+.info-card h5{
+  margin-top: 10px;
+}
+
+
+.card-left{
+  background-color: var(--green-mid);
+  padding-left: 10px;
+}
+
+.card-middle-1{
+  background-color: var(--yellow-light);
+}
+
+.card-middle-2{
+  background-color: var(--yellow-mid);
+}
+
+.card-right{
+  background-color: var(--yellow-dark);
+  padding-right: 10px;
+}
+
+.btn-outline{
+  border: 1px solid black;
+  margin: auto auto 10px;
+  max-width: 100%;
+}
+
+/* Events */
+.events{
+  text-align: center;
+  background-color: var(--green-light);
+  padding-top: 10px;
+  overflow: hidden;
+  padding-bottom: 20px;
+
+}
+
+.event-col{
+  margin: auto;
+}
+
+.btn-event{
+  border: 1px black solid;
+}
+
+/* Newsletter */
+.newsletter{
+  padding-top: 16px;
+  background-color: var(--green-light);
+  text-align: center;
+}
+
+.form-group{
+  padding: 10px;
+}
