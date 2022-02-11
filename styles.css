@@ -316,7 +316,7 @@ a:hover.nav-link{
 /* Vex Adopt Page */ 
 .profile{
   background-color: var(--green-mid);
-  height: 400px;
+  height: 450px;
   overflow: hidden;
   justify-content: center;
   display: flex;
@@ -333,7 +333,7 @@ a:hover.nav-link{
 
 .profile-image{
   max-width: 500px;
-  min-height: 400px;
+  min-height: 450px;
   object-fit: cover;
   overflow: hidden;
 }
@@ -361,4 +361,45 @@ a:hover.nav-link{
 
 .bio h3, h1{
   font-family: 'Cookie', cursive;
+}
+
+/* Care Page CSS */ 
+.care-checklist{
+  text-align: center;
+  padding: 10px;
+  background-color: var(--background-offwhite);
+}
+
+.care-header{
+  text-align: center;
+  background-color: var(--green-light);
+  padding: 10px;
+}
+
+.care-card-holder{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--green-light);
+}
+
+.card-care{
+  margin: 10px;
+  height: 500px;
+  background-color: var(--background-offwhite);
+  text-align: center;
+}
+
+.card-img-top{
+  height: 250px;
+  object-fit: cover;
+}
+
+.btn-read{
+  border: 1px solid black;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 25%;
+  right: 25%;
 }
