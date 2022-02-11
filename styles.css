@@ -233,3 +233,132 @@ a:hover.nav-link{
   text-align: center;
   background-color: var(--green-light);
 }
+
+/* Adopt CSS */ 
+.adopt-body{
+  background-color: var(--green-light);
+}
+.adopt-header{
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  background-color: var(--green-light);
+}
+
+.adopt-header h1{
+  font-family: 'Cookie', cursive;
+  text-decoration: underline;
+}
+
+.gallery {
+  border: 1px solid #ccc;
+  height: 575px;
+  position: relative;
+  background-color: var(--background-offwhite);
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.adopt-image {
+  height: 250px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.adopt-description {
+  padding: 15px;
+  text-align: center;
+}
+
+.adopt-description h1{
+  font-family: 'Cookie', cursive;
+}
+
+.adopt-button {
+  justify-content: center;
+  bottom: 10px;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+}
+
+/* Adopt Card Responsiveness */
+.responsive {
+  padding: 10px;
+  float: left;
+  width: 16.66667%;
+}
+
+@media only screen and (max-width: 1325px) {
+  .responsive {
+    width: 24.99999%;
+  }
+}
+@media only screen and (max-width: 885px) {
+  .responsive {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+  }
+}
+
+/* Vex Adopt Page */ 
+.profile{
+  background-color: var(--green-mid);
+  height: 400px;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+}
+
+.profile-info{
+  text-align: center;
+  padding-top: 15px;
+}
+
+.profile-info h1{
+  font-family: 'Cookie', cursive;
+}
+
+.profile-image{
+  max-width: 500px;
+  min-height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.rating-bar{
+  background-color: var(--background-offwhite);
+  padding: 10px;
+  text-align: center;
+}
+
+.checked{
+  color: var(--yellow-mid)
+}
+
+.bio-includes{
+  background-color: var(--yellow-light);
+  padding-top: 10px;
+  text-align: center;
+}
+
+.bio-paragraph{
+  background-color: var(--green-light);
+  padding-top: 10px;
+}
+
+.bio h3, h1{
+  font-family: 'Cookie', cursive;
+}

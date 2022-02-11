@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" />
+    <script src="https://kit.fontawesome.com/c757924f8d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Telsan Cat House</title>
+  </head>
+  <body>
+
+    <!--Webpage Header-->
+    <header class="jumbotron jumbotron-fluid d-none d-sm-block">
+      <div class="header">
+          <div class="logo">
+            <a href="#">
+              <img src="img/logo.png" alt="a cat paw">
+            </a>
+          </div>
+          <div class="title">
+            Telsan Cat House
+          </div>
+          <div class="donate-icon">
+            <a role="button"
+              href="donate/index.html"
+              class="btn btn-light btn-lg donate-btn">Donate!</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+      <div class="container-fluid w-100">
+      <!-- Title and Logo only show on xs screens -->
+        <a href="#" class="d-block d-sm-none navbar-title">
+          <img src="img/logo.png" 
+            width="30" 
+            height="30" 
+            class="d-inline-block align-top"
+            alt="a cat paw">
+          <span class="">Telsan Cat House</span>
+        </a>
+    
+        <button class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="navbar-collapse collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav nav-fill w-100">
+            <li class="nav-item d-block d-sm-none">
+              <a href="#" class="nav-link">Donate!</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="adopt.html" class="nav-link active">Adopt</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Care</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Volunteer</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Webpage Body-->
+    <div class="body">
+      <div class="profile">
+        <div class="row">
+          <div class="col">
+            <img src="img/vex-2.jpg" alt="" class="w-100 rounded profile-image">
+          </div>
+          <div class="col profile-info">
+            <h1>Vex'ahlia</h1><hr>
+            Gender: Female <hr>
+            Age: 1.5 Years <hr>
+            Type: DLH <hr>
+            Looks: Black <hr>
+            Weight: 10 lbs <hr>
+            Special Needs: Picky Eater
+          </div>
+        </div>
+      </div>
+      
+      <div class="rating-bar">
+        <!-- Rating Guide -->
+        <div class="row">
+          <div class="col">
+            How is Vex with: 
+          </div>
+          <div class="col">
+            Kids
+          </div>
+          <div class="col">
+            Cats
+          </div>
+          <div class="col">
+            Dogs
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <!-- Popup Modal Button-->
+            <a role="button" class="btn btn-light btn-sm text-nowrap btn-outline" id="ratingBtn">Rating Guide</a>
+          </div>
+          <div class="col">
+            <span class="far fa-star"></span>
+            <span class="far fa-star"></span>
+            <span class="far fa-star"></span>
+          </div>
+          <div class="col">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="col">
+            <span class="fa fa-solid fa-question"></span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="bio">
+        <div class="row">
+          <div class="col bio-includes">
+            <h3>Adoption comes with:</h3><hr>
+            Spay/Neuter<hr>
+            Up-to-date Vaccinations & Dewormed<hr>
+            Tested for FIV, FeLV, and Heartworm<hr>
+            Free Wellness Exam<hr>
+          </div>
+          <div class="col bio-paragraph">
+            <h1>Bio</h1><hr>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sint eligendi et, placeat tenetur aut?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal-->
+    <div id="infoModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header rating-guide">
+            <h3 class="modal-title">Rating Guide</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <table class="table table-striped rating">
+                <thead>
+                  <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Social Rating</th>
+                    <th scope="col">Cat Rating</th>
+                    <th scope="col">Dog Rating</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" width="15%">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                    </th>
+                    <td>This cat is very social and will seek out attention from people of all ages.</td>
+                    <td>This cat does best great with other cats and will prefer to have a companion.</td>
+                    <td>This cat has been around dogs and enjoys their company.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="far fa-star"></span>
+                    </th>
+                    <td>This cat is social, but may prefer to stay away while children are playing.</td>
+                    <td>This cat enjoys other cats, but does not necessarily need a companion.</td>
+                    <td>This cat has been around dogs before, but may need an adjustment period.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span class="fa fa-star checked"></span>
+                      <span class="far fa-star"></span>
+                      <span class="far fa-star"></span>
+                    </th>
+                    <td>This cat is somewhat social, but will hide when things are loud or there are multiple people present. </td>
+                    <td>This cat will be around other cats, but does not bond with them. </td>
+                    <td>This cat has been around dogs before, but are still afraid of their prescence and will need a longer adjustment period.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span class="far fa-star"></span>
+                      <span class="far fa-star"></span>
+                      <span class="far fa-star"></span>
+                    </th>
+                    <td>This cat is very shy. They will thrive best in a quiet environment with few people and no children.</td>
+                    <td>This cat does not like other cats and should be an only cat. </td>
+                    <td>This cat does not like dogs and should not be in an household with any dogs. </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <span class="fa fa-solid fa-question"></span>
+                    </th>
+                    <td>This cat has not been evaulted for social situations.</td>
+                    <td>This cat has not been evaulted with other cats. </td>
+                    <td>This cat has not been evaulted with dogs.</td>
+                  </tr>
+                </tbody>
+              </table>
+  
+                <div class="row">
+                  <div class="col">
+                    <button type="button" class="btn btn-secondary closeBtn" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Webpage Footer-->
+    <footer class="site-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center">
+            <h5>Contact</h5>
+            555-555-5555<br />
+            email@email.com<br />
+            1234 Cat Road, Cat Island, NY
+          </div>
+          <div class="col text-center">
+            <h5>Socials</h5>
+            <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><span class="fa fa-instagram fa-lg"></span></span></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><span class="fa fa-facebook fa-lg"></span></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><span class="fa fa-twitter fa-lg"></span></a>
+            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><span class="fa fa-youtube fa-lg"></span></a>
+          </div>
+          <div class="col text-center">
+            <h5>Hours</h5>
+            Mon-Sat <br />
+            10:00-5:00 <br />
+            Sunday <br />
+            Closed
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--jQuery, Popper and Bootstrap JS plugins-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
