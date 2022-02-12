@@ -1,5 +1,6 @@
 :root{
   --font-color: rgb(131, 49, 24);
+  --yellow-faint: rgb(250, 240, 218);
   --yellow-light: rgb(255, 208, 105);
   --yellow-mid: rgb(252, 184, 57);
   --yellow-dark: rgb(199, 147, 35);
@@ -100,6 +101,10 @@ a:hover.nav-link{
 .body{
   overflow: hidden;
   font-family: 'Josefin Sans', sans-serif;
+}
+
+.body h1{
+  font-family: 'Cookie', cursive;
 }
 
 .row-home{
@@ -368,11 +373,13 @@ a:hover.nav-link{
   text-align: center;
   padding: 10px;
   background-color: var(--background-offwhite);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .care-header{
   text-align: center;
-  background-color: var(--green-light);
+  background-color: var(--yellow-light);
   padding: 10px;
 }
 
@@ -402,4 +409,16 @@ a:hover.nav-link{
   bottom: 10px;
   left: 25%;
   right: 25%;
+}
+
+.contact-info{
+  text-align: center;
+  padding-top: 10px;
+  background-color: var(--green-light);
+}
+
+.contact-form{
+  text-align: center;
+  padding-top: 10px;
+  background-color: var(--yellow-faint);
 }
