@@ -422,3 +422,30 @@ a:hover.nav-link{
   padding-top: 10px;
   background-color: var(--yellow-faint);
 }
+
+/* Volunteer Page */
+.volunteer-header{
+  text-align: center;
+  background-color: var(--yellow-faint);
+}
+
+.volunteer-opportunities{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--green-light);
+}
+
+/* Donate Page */
+.donate-header{
+  background-color: var(--yellow-faint);
+  text-align: center;
+}
+
+.donate-header h1{
+  text-decoration: underline;
+}
+
+.donate-form{
+  background-color: var(--green-light);
+}

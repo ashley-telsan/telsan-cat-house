@@ -1,5 +1,5 @@
 $(function(){
-  $("#infoButton").click(function(){
-    $("#infoModal").modal('show');
+  $("#ratingBtn").click(function(){
+    $("#ratingModal").modal('show');
   });
 });
