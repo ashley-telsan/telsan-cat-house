@@ -6,7 +6,10 @@
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "imagemin": "imagemin img/* -o dist/img",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,9 @@
   },
   "homepage": "https://github.com/ashley-telsan/telsan-cat-house#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
